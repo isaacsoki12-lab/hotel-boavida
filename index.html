@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLAT-HOTEL KONGO BOA-VIDA</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<script src="script.js"></script>
+  <!-- BOUTON OUVRIR LE MENU -->
+  <div class="menu-btn" onclick="openMenu()">☰</div>
+
+  <!-- MENU LATERAL -->
+<div class="side-menu" id="menu">
+  <div class="close-btn" onclick="closeMenu()">✖</div>
+  <a href="#accueil" onclick="closeMenu()">Accueil</a>
+  <a href="#apropos" onclick="closeMenu()">À propos</a>
+  <a href="#localisation" onclick="closeMenu()">localisation</a>
+  <a href="#services" onclick="closeMenu()">services</a>
+  <a href="#video-chambre" onclick="closeMenu()">chambres</a>
+  <a href="#galerie" onclick="closeMenu()">Galerie</a>
+  <a href="#reservation" onclick="closeMenu()">Réservation</a>
+  <a href="https://wa.me/243899181516">Contact</a>
+  <a href="#admin">Administration</a>
+  <a href="./admi.html">Administrateur Réseaux</a>
+</div>
+
+
+  <!-- HEADER avec image de fond -->
+  <header id="accueil">
+  <div class="top-bar">
+    <img src="./image/logo.JPG" alt="Logo de l'hôtel" class="logo">
+    <div class="menu-btn" onclick="openMenu()">☰</div>
+  </div>
+
+  <div class="header-content">
+    <h1> Bienvenue au <br>FLAT-HOTEL KONGO BOA-VIDA</h1>
+    <p> Nous vous souhaitons un agreable séjour <br> dans notre établissement,  Votre confort, notre priorité</p>
+    <a class="btn" href="https://wa.me/243899181516" target="_blank">
+      Nous contacter sur WhatsApp
+    </a>
+  </div>
+</header>
+
+<div class="separateur"></div>
+
+ <!-- SECTION PRÉSENTATION DE L'HÔTEL -->
+<section class="section presentation" id="apropos">
+  <div class="container">
+    <div class="texte">
+      <h2>À propos de notre hôtel</h2>   
+ <p>Situé a Kinshasa, <strong>KONGO BOA-VIDA</strong> vous accueille dans
+ un cadre moderne, calme et chaleureux. Que vous soyez en séjour d'affaires, en vacances ou en
+ passage, notre établissement vous garantit confort, tranquillité et un service de qualité.</p>
+ <p>Profitez de nos <strong>chambres spacieuses</strong>, de notre <strong>restaurant
+ raffiné</strong>, de notre <strong>piscine rafraîchissante</strong> et de notre agréable
+ <strong>paillote</strong> pour vos moments de détente ou vos rencontres professionnelles.</p>
+ <h3>Pourquoi choisir KONGOBOA-VIDA?</h3>
+ <ul>
+ <li>Chambres confortables et climatisées</li>
+ <li>Cuisine locale et internationale</li>
+ <li>Piscine et espace détente</li>
+ <li>Accès facile et sécurisé</li>
+ <li>Service client attentif</li>
+ </ul>
+ <p><strong>Réservez dès aujourd’hui et vivez l’expérience BOA-VIDA !</strong></p>
+    </div>
+    <div class="image">
+      <img src="./image/hotel1.JPG" alt="Photo de l'hôtel">
+    </div>
+  </div>
+</section>
+
+<div class="separateur"></div>
+
+<!-- SECTION LOCALISATION -->
+<section class="section localisation" id="localisation">
+  <h2>notre localisation</h2>
+  <p>
+    <strong>Adresse :</strong> Avenue kadiata, Quartier lutendele, Mont-ngafula – Kinshasa, RDC.
+  </p>
+  <div class="carte">
+   <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.25!2d15.285!3d-4.438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3f65f33fd2d1%3A0xabcdef1234567890!2sLutendele%2C%20Mont-Ngafula%2C%20Kinshasa!5e0!3m2!1sfr!2scd!4v1725175000000!5m2!1sfr!2scd"
+  width="100%"
+  height="400"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+  </div>
+</section>
+
+<div class="separateur"></div>
+
+  <!-- SECTION SERVICE -->
+<section id="services" style="padding: 50px 20px; background-color: #f8f8f8;">
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px;">Nos Services</h2>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+      
+      <!-- Service 1 -->
+      <div class="service-box" style="flex: 1 1 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center;">
+        <div class="slider-container" style="position: relative;">
+          <img class="slider-image" src="./image/chambre-superieur.jpg" alt="Hébergement" style="width: 100%; height: 350px; object-fit: cover; border-radius: 8px;">
+          <button class="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❮</button>
+          <button class="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❯</button>
+        </div>
+        <h3 style="margin-top: 15px;">Hébergement Confortable</h3>
+        <p>Des chambres modernes et bien équipées, avec climatisation, télévision, et salle de bain privative.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-box" style="flex: 1 1 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center;">
+        <div class="slider-container" style="position: relative;">
+          <img class="slider-image" src="./image/restau.JPG" alt="Restaurant" style="width: 100%; height: 370px; object-fit: cover; border-radius: 8px;">
+          <button class="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❮</button>
+          <button class="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❯</button>
+        </div>
+        <h3 style="margin-top: 15px;">Restaurant & Bar</h3>
+        <p>Un restaurant proposant une cuisine locale et internationale, ainsi qu’un bar avec une grande sélection de boissons.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-box" style="flex: 1 1 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center;">
+        <div class="slider-container" style="position: relative;">
+          <img class="slider-image" src="./image/salle-de-fete.jpg" alt="Salle de réunion" style="width: 100%; height: 370px; object-fit: cover; border-radius: 8px;">
+          <button class="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❮</button>
+          <button class="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❯</button>
+        </div>
+        <h3 style="margin-top: 15px;">Salles de fête</h3>
+        <p>Des espaces adaptés pour vos séminaires, conférences et événements, équipés de matériel audio-visuel.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-box" style="flex: 1 1 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center;">
+        <div class="slider-container" style="position: relative;">
+          <img class="slider-image" src="./image/paillote.JPG" alt="Paillote" style="width: 100%; height: 370px; object-fit: cover; border-radius: 8px;">
+          <button class="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❮</button>
+          <button class="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❯</button>
+        </div>
+        <h3 style="margin-top: 15px;">Paillote</h3>
+        <p>Un lieu de détente avec vue agréable, parfait pour se relaxer autour d’un verre ou d’un repas.</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-box" style="flex: 1 1 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center;">
+        <div class="slider-container" style="position: relative;">
+          <img class="slider-image" src="./image/bar.jpg" alt="Bar" style="width: 100%; height: 370px; object-fit: cover; border-radius: 8px;">
+          <button class="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❮</button>
+          <button class="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 5px 10px; cursor: pointer;">❯</button>
+        </div>
+        <h3 style="margin-top: 15px;">Bar</h3>
+        <p>Un espace convivial pour se retrouver entre amis, savourer un cocktail ou écouter de la musique.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="separateur"></div>
+
+<!-- Section vidéo locale -->
+<section id="video-chambre" style="padding: 60px 20px; background-color: #fff;">
+  <div style="max-width: 600px;  margin: auto; text-align: center;">
+    <h2 style="font-size: 2.5em; margin-bottom: 20px;">Découvrez Nos Chambres en Vidéo</h2>
+    <p style="font-size: 1.1em; color: #555; margin-bottom: 40px;">
+      Visitez virtuellement nos chambres pour apprécier le confort et l’ambiance que nous vous réservons.
+    </p>
+
+    <video controls style="width: 100%; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+      <source src="./video/video-chambre.MP4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+  </div>
+</section>
+
+<div class="separateur"></div>
+
+<!-- SECTION GALERIE -->
+<section id="galerie" style="padding: 50px 20px; background-color: #f8f8f8;">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 style="font-size: 2.5em; margin-bottom: 10px;">Galerie</h2>
+    <p>Découvrez notre hôtel en images</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+    <div><img src="./image/chambre superieure.JPG" alt="Chambre de l'hôtel" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/salle-de-fete.jpg" alt="Salle de salle-de-fete" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/bar2.JPG" alt="Bar" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/chambre standard.jpg" alt="Bar" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/paillote3.JPG" alt="Bar" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/bar5.JPG" alt="Réception" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/paillote.JPG" alt="Extérieur de l'hôtel" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/paillote9.JPG" alt="Réception" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/couloir (1).JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/couloir4.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/couloir7.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/douche.jpg" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/bar4.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/paillote10.JPG" alt="Réception" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/chambre-superieur.jpg" alt="Bar" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/couloi5.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/couloir8.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/chambre2.jpg" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/bar1.jpg" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    <div><img src="./image/vu-de-nuit.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
+    
+  </div>
+</section>
+
+<div class="separateur"></div>
+
+ <!-- SECTION ADMINISTRATION -->
+<section id="admin" style="padding: 50px 20px; background-color: #f1f1f1; font-family: sans-serif;">
+  <div style="max-width: 1000px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.5em; margin-bottom: 10px;">Administration de l’entreprise</h2>
+    <p style="margin-bottom: 40px; color: #555;">Découvrez les responsables de la gestion du flat-hôtel Kongo Boa-Vida</p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      
+      <!-- Sœur 1 -->
+      <div style="flex: 1 1 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <img src="./image/benedicte-soki (2).JPG" alt="Administratrice 1" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+        <h3> DIAVITA benedicte</h3>
+        <p style="margin: 5px 0; color: #444;"><strong>Poste :</strong> Gérante </p>
+        <p style="margin: 5px 0; color: #444;"><strong>Email :</strong> benedictesoki7@gmail.com</p>
+        <p style="margin: 5px 0; color: #444;"><strong>Téléphone :</strong> +243 827837364</p>
+      </div>
+
+      <!-- Sœur 2 -->
+      <div style="flex: 1 1 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <img src="./image/grace-soki (2).JPG" alt="Administratrice 2" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+        <h3>grace soki</h3>
+        <p style="margin: 5px 0; color: #444;"><strong>Poste :</strong> Adjointe Gérante </p>
+        <p style="margin: 5px 0; color: #444;"><strong>Email :</strong> sokigrace739@gmail.com</p>
+        <p style="margin: 5px 0; color: #444;"><strong>Téléphone :</strong> +243 892632480</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="separateur"></div>
+
+<!-- FOOTER -->
+<footer id="reservation" style="background-color: #1d1f4e; color: white; font-family: sans-serif;">
+  <div style="max-width: 1200px; margin: auto; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+
+    <!-- À PROPOS -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">À PROPOS</h3>
+      <p style="margin-top: 10px;">
+        KONGOBOA-VIDA est un nouveau hotel dans la ville Kinshasa, il offre des chambres de qualités, une salle de reunion, un restaurant, un bar, une piscine et une salle de fete.
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">CONTACT</h3>
+      <p><i class="fas fa-envelope"></i> congoboavida@gmail.com</p>
+      <p><i class="fas fa-envelope-open"></i> reservationflat-hotelcongoboavida@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +243 899181516</p>
+      <p><i class="fas fa-mobile-alt"></i> +243 987790102</p>
+      <p><i class="fas fa-map-marker-alt"></i> A la carte</p>
+
+      <!-- Réseaux sociaux -->
+      <div style="margin-top: 15px;">
+        <h4 style="margin-bottom: 10px;">SUIVEZ-NOUS</h4>
+        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- PAIEMENTS -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">PAIEMENTS</h3>
+      <div style="margin-top: 15px;">
+        <i class="fab fa-cc-visa fa-2x" style="margin-right: 15px;"></i>
+        <i class="fab fa-cc-mastercard fa-2x" style="margin-right: 15px;"></i>
+        <i class="fab fa-cc-amex fa-2x"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bas du footer -->
+  <div style="text-align: center; padding: 15px 0; background-color: #1a1c2d;">
+    <p style="margin: 0; font-size: 14px;">© 2025 Kongo Boa-Vida. Tous droits réservé  <span style="color: #cac709;">isaac stone</span></p>
+  </div>
+</footer>
+
+<!-- BOUTON RETOUR EN HAUT -->
+<a href="#" id="scrollTopBtn" title="Retour en haut">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+  <!-- SCRIPT JS -->
+  <script>
+    function openMenu() {
+      document.getElementById("menu").style.left = "0";
+    }
+
+    function closeMenu() {
+      document.getElementById("menu").style.left = "-250px";
+    }
+  </script>
+
+  <script>
+  function afficherNumero() {
+    const numero = document.getElementById("numero");
+    numero.textContent = "📞 +243 899181516"; // Remplace par le vrai numéro
+    numero.style.display = "block";
+  }
+</script>
+
+
+<script>
+  // Tableau des images par service
+  const allImages = [
+    ["../image/chambre-superieur.jpg", "../image/chambre2..JPG", "../image/chambre4.JPG" ,"../image/chambre5.JPG" ,"../image/chambre6.JPG","../image/chambre7.JPG"],
+    ["../image/restau.JPG", "../image/restau2.jpg", "../image/restau3.jpg"],
+    ["../image/salle-de-fete.jpg", "../image/salle2.jpg", "../image/salle3.jpg"],
+    ["../image/paillote.JPG", "../image/paillote2.jpg", "../image/paillote3.jpg", "../image/paillote2.JPG", "../image/paillote4.jpg", "../image/paillote5.jpg"],
+    ["../image/bar.jpg", "../image/bar2.jpg", "../image/bar3.jpg" , "../image/bar4.jpg", "../image/bar5.jpg", "../image/bar7.jpg", "../image/bar8.jpg"]
+  ];
+
+  document.querySelectorAll('.service-box').forEach((box, index) => {
+    const imgEl = box.querySelector('.slider-image');
+    const prev = box.querySelector('.prev');
+    const next = box.querySelector('.next');
+    const images = allImages[index];
+    let i = 0;
+
+    prev.addEventListener('click', () => {
+      i = (i - 1 + images.length) % images.length;
+      imgEl.src = images[i];
+    });
+
+    next.addEventListener('click', () => {
+      i = (i + 1) % images.length;
+      imgEl.src = images[i];
+    });
+  });
+</script>
+<script>
+// Afficher ou cacher le bouton selon la position de scroll
+window.addEventListener('scroll', function () {
+  var btn = document.getElementById('scrollTopBtn');
+  if (window.scrollY > 300) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
+});
+
+// Scroll fluide vers le haut
+document.getElementById('scrollTopBtn').addEventListener('click', function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+
+</body>
+</html>

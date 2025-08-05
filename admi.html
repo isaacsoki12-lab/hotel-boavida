@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- SECTION ADMINISTRATEUR RÉSEAU -->
+<section id="admin-reseau" style="padding: 50px 20px; background-color: #f1f1f1; font-family: sans-serif;">
+  <div style="max-width: 900px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.5em; margin-bottom: 10px;">Administrateur Réseau</h2>
+    <p style="margin-bottom: 40px; color: #555;">Responsable de l’infrastructure informatique et de la sécurité réseau de l’établissement.</p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px;">
+      
+      <!-- Image de l'admin -->
+      <div style="flex: 0 0 200px;">
+        <img src="./image/stone.JPG" alt="Administrateur Réseau" style="width: 100px; height: 150px; border-radius: 40%; object-fit: cover; border: 3px solid #ccc;">
+      </div>
+
+      <!-- Informations -->
+      <div style="flex: 1 1 300px; text-align: left;">
+        <h3 style="margin: 0;">Nom Prénom</h3>
+        <p style="margin: 5px 0; color: #444;"><strong>Poste :</strong> Administrateur Réseau</p>
+        <p style="margin: 5px 0; color: #444;"><strong>Email :</strong> isaacsoki12@gmail.com</p>
+        <p style="margin: 5px 0; color: #444;"><strong>Téléphone :</strong> +243 899181516</p>
+        <p style="margin: 5px 0; color: #444;"><strong>Disponibilité :</strong> 24h/24 en cas d'incident technique</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="reservation" style="background-color: #1d1f4e; color: white; font-family: sans-serif;">
+  <div style="max-width: 1200px; margin: auto; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+
+    <!-- À PROPOS -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">À PROPOS</h3>
+      <p style="margin-top: 10px;">
+        KONGOBOA-VIDA est un nouveau hotel dans la ville Kinshasa, il offre des chambres de qualités, une salle de reunion, un restaurant, un bar, une piscine et une salle de fete.
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">CONTACT</h3>
+      <p><i class="fas fa-envelope"></i> congoboavida@gmail.com</p>
+      <p><i class="fas fa-envelope-open"></i> reservationhotelcongoboavida@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +243 899181516</p>
+      <p><i class="fas fa-mobile-alt"></i> +243 987790102</p>
+      <p><i class="fas fa-map-marker-alt"></i> A la carte</p>
+
+      <!-- Réseaux sociaux -->
+      <div style="margin-top: 15px;">
+        <h4 style="margin-bottom: 10px;">SUIVEZ-NOUS</h4>
+        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- PAIEMENTS -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">PAIEMENTS</h3>
+      <div style="margin-top: 15px;">
+        <i class="fab fa-cc-visa fa-2x" style="margin-right: 15px;"></i>
+        <i class="fab fa-cc-mastercard fa-2x" style="margin-right: 15px;"></i>
+        <i class="fab fa-cc-amex fa-2x"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bas du footer -->
+  <div style="text-align: center; padding: 15px 0; background-color: #1a1c2d;">
+    <p style="margin: 0; font-size: 14px;">© 2025 kongo boa-vida. Tous droits réservé  <span style="color: #cac709;">isaac stone</span></p>
+  </div>
+</footer>
+
+<!-- BOUTON RETOUR EN HAUT -->
+<a href="#" id="scrollTopBtn" title="Retour en haut">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+  <!-- SCRIPT JS -->
+  <script>
+    function openMenu() {
+      document.getElementById("menu").style.left = "0";
+    }
+
+    function closeMenu() {
+      document.getElementById("menu").style.left = "-250px";
+    }
+  </script>
+
+  <script>
+  function afficherNumero() {
+    const numero = document.getElementById("numero");
+    numero.textContent = "📞 +243 899181516"; // Remplace par le vrai numéro
+    numero.style.display = "block";
+  }
+</script>
+
+
+<script>
+  // Tableau des images par service
+  const allImages = [
+    ["../image/chambre-superieur.jpg", "../image/chambre2..JPG", "../image/chambre4.JPG" ,"../image/chambre5.JPG" ,"../image/chambre6.JPG","../image/chambre7.JPG"],
+    ["../image/restau.JPG", "../image/restau2.jpg", "../image/restau3.jpg"],
+    ["../image/salle-de-fete.jpg", "../image/salle2.jpg", "../image/salle3.jpg"],
+    ["../image/paillote.JPG", "../image/paillote2.jpg", "../image/paillote3.jpg", "../image/paillote2.JPG", "../image/paillote4.jpg", "../image/paillote5.jpg"],
+    ["../image/bar.jpg", "../image/bar2.jpg", "../image/bar3.jpg" , "../image/bar4.jpg", "../image/bar5.jpg", "../image/bar7.jpg", "../image/bar8.jpg"]
+  ];
+
+  document.querySelectorAll('.service-box').forEach((box, index) => {
+    const imgEl = box.querySelector('.slider-image');
+    const prev = box.querySelector('.prev');
+    const next = box.querySelector('.next');
+    const images = allImages[index];
+    let i = 0;
+
+    prev.addEventListener('click', () => {
+      i = (i - 1 + images.length) % images.length;
+      imgEl.src = images[i];
+    });
+
+    next.addEventListener('click', () => {
+      i = (i + 1) % images.length;
+      imgEl.src = images[i];
+    });
+  });
+</script>
+<script>
+// Afficher ou cacher le bouton selon la position de scroll
+window.addEventListener('scroll', function () {
+  var btn = document.getElementById('scrollTopBtn');
+  if (window.scrollY > 300) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
+});
+
+// Scroll fluide vers le haut
+document.getElementById('scrollTopBtn').addEventListener('click', function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>
