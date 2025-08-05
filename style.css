@@ -68,7 +68,8 @@ body {
 .top-bar h2{
   position: absolute;
   right: 45px;
-  font-size: 10px;
+  font-size: 30px;
+  
 }
 
 /* === LOGO === */
@@ -464,4 +465,25 @@ a.retour {
 
 a.retour:hover {
   background-color: #3c3f8c;
+}
+
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px; /* espace entre le bouton et le titre */
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
 }
