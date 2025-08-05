@@ -17,12 +17,9 @@
 <div class="side-menu" id="menu">
   <div class="close-btn" onclick="closeMenu()">✖</div>
   <a href="#accueil" onclick="closeMenu()">Accueil</a>
-  <a href="#apropos" onclick="closeMenu()">À propos</a>
-  <a href="#localisation" onclick="closeMenu()">localisation</a>
+  <a href="./about.html" onclick="closeMenu()">À propos</a>
   <a href="#services" onclick="closeMenu()">services</a>
-  <a href="#video-chambre" onclick="closeMenu()">chambres</a>
-  <a href="#galerie" onclick="closeMenu()">Galerie</a>
-  <a href="#reservation" onclick="closeMenu()">Réservation</a>
+  <a href="./galerie.html" onclick="closeMenu()">Galerie</a>
   <a href="https://wa.me/243899181516">Contact</a>
   <a href="#admin">Administration</a>
   <a href="./admi.html">Administrateur Réseaux</a>
@@ -32,7 +29,7 @@
   <!-- HEADER avec image de fond -->
   <header id="accueil">
   <div class="top-bar">
-    <img src="./image/logo.JPG" alt="Logo de l'hôtel" class="logo">
+    <h2>FLAT-HOTEL KONGO BOA-VIDA</h2>
     <div class="menu-btn" onclick="openMenu()">☰</div>
   </div>
 
@@ -47,31 +44,45 @@
 
 <div class="separateur"></div>
 
- <!-- SECTION PRÉSENTATION DE L'HÔTEL -->
-<section class="section presentation" id="apropos">
-  <div class="container">
-    <div class="texte">
-      <h2>À propos de notre hôtel</h2>   
- <p>Situé a Kinshasa, <strong>KONGO BOA-VIDA</strong> vous accueille dans
- un cadre moderne, calme et chaleureux. Que vous soyez en séjour d'affaires, en vacances ou en
- passage, notre établissement vous garantit confort, tranquillité et un service de qualité.</p>
- <p>Profitez de nos <strong>chambres spacieuses</strong>, de notre <strong>restaurant
- raffiné</strong>, de notre <strong>piscine rafraîchissante</strong> et de notre agréable
- <strong>paillote</strong> pour vos moments de détente ou vos rencontres professionnelles.</p>
- <h3>Pourquoi choisir KONGOBOA-VIDA?</h3>
- <ul>
- <li>Chambres confortables et climatisées</li>
- <li>Cuisine locale et internationale</li>
- <li>Piscine et espace détente</li>
- <li>Accès facile et sécurisé</li>
- <li>Service client attentif</li>
- </ul>
- <p><strong>Réservez dès aujourd’hui et vivez l’expérience BOA-VIDA !</strong></p>
+    <!-- SECTION NOTRE HÔTEL -->
+<section class="section presentation" id="notre-hotel">
+  <div class="container" style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+    
+    <!-- Texte à gauche -->
+    <div class="texte" style="flex: 1; min-width: 300px;">
+      <h2>Notre Hôtel</h2>   
+      <p>Bienvenue au <strong>Flat-Hôtel KONGO BOA-VIDA</strong>, un établissement moderne situé au cœur de Kinshasa. Nous vous accueillons dans un cadre calme, sécurisé et raffiné, idéal pour vos séjours d’affaires, vos vacances ou vos moments de détente.</p>
+
+      <p>Notre équipe chaleureuse et professionnelle est à votre écoute pour vous offrir un service personnalisé, dans le respect de vos attentes. Nous mettons un point d’honneur à garantir votre confort, votre intimité et votre satisfaction tout au long de votre séjour.</p>
+
+      <p>Que vous soyez en voyage d’affaires ou en quête de tranquillité, notre hôtel vous propose une atmosphère paisible, des installations modernes, et un accueil exceptionnel. Venez vivre une expérience unique où le luxe discret rencontre l’hospitalité congolaise.</p>
+    
+      <h3>REFERENCE</h3> 
+      <P>la résidence du conseillé</P>
+    
     </div>
-    <div class="image">
-      <img src="./image/hotel1.JPG" alt="Photo de l'hôtel">
+
+
+    <!-- Carrousel à droite -->
+    <div class="image-carousel" style="flex: 1; min-width: 300px;">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <img src="./image/hotel1.JPG" class="active" alt="Image 1">
+          <img src="./image/hotel2.JPG" alt="Image 2">
+          <img src="./image/hotel3.JPG" alt="Image 3">
+          <img src="./image/hotel5.JPG" alt="Image 3">
+          <img src="./image/hotel6.JPG" alt="Image 3">
+          <img src="./image/hotel7.JPG" alt="Image 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
     </div>
+
   </div>
+</section>
+
+
 </section>
 
 <div class="separateur"></div>
@@ -184,37 +195,21 @@
 
 <div class="separateur"></div>
 
-<!-- SECTION GALERIE -->
-<section id="galerie" style="padding: 50px 20px; background-color: #f8f8f8;">
-  <div style="text-align: center; margin-bottom: 30px;">
-    <h2 style="font-size: 2.5em; margin-bottom: 10px;">Galerie</h2>
-    <p>Découvrez notre hôtel en images</p>
-  </div>
+<!-- SECTION GALERIE (Accueil) -->
+<section class="section galerie" id="galerie">
+  <div class="container">
+    <h2>Galerie</h2>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-    <div><img src="./image/chambre superieure.JPG" alt="Chambre de l'hôtel" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/salle-de-fete.jpg" alt="Salle de salle-de-fete" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/bar2.JPG" alt="Bar" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/chambre standard.jpg" alt="Bar" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/paillote3.JPG" alt="Bar" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/bar5.JPG" alt="Réception" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/paillote.JPG" alt="Extérieur de l'hôtel" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/paillote9.JPG" alt="Réception" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/chambre6.jpg" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/couloir4.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/couloir7.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/douche.jpg" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/bar4.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/paillote10.JPG" alt="Réception" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/chambre-superieur.jpg" alt="Bar" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/couloi5.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/couloir8.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/chambre2.jpg" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/bar1.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    <div><img src="./image/vu-de-nuit.JPG" alt="Restaurant" style="width: 100%; height: auto; border-radius: 10px;"></div>
-    
+    <div class="galerie-accueil">
+      <img src="./image/restau.JPG" alt="Aperçu galerie" class="image-unique">
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="./galerie.html" class="btn-voir-plus">Voir plus</a>
+    </div>
   </div>
 </section>
+
 
 <div class="separateur"></div>
 
@@ -250,6 +245,29 @@
 
 
 <div class="separateur"></div>
+
+<section id="contact" style="padding: 60px 20px; background-color: #f7f8f3; font-family: Arial, sans-serif; text-align: center;">
+  <h2 style="font-size: 28px; color: #9b946f; letter-spacing: 2px;">CONTACTEZ-NOUS</h2>
+  <hr style="width: 60px; margin: 15px auto; border: 1px solid #ccc;">
+
+  <div style="margin-top: 30px;">
+    <div style="margin-bottom: 30px;">
+      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon" style="width: 24px;">
+      <h3 style="color: #9b946f; margin-top: 10px;">APPELEZ-NOUS</h3>
+      <p style="color: #666; font-size: 18px;">+243 899181516<br>+243 987790102</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+      <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email Icon" style="width: 24px;">
+      <h3 style="color: #9b946f; margin-top: 10px;">ENVOYEZ-NOUS UN MAIL</h3>
+      <p style="color: #666; font-size: 18px;">
+        info@kongo-boavida.com<br>
+        reservationboavida@gmail.com
+      </p>
+    </div>
+  </div>
+</section>
+
 
 <!-- FOOTER -->
 <footer id="reservation" style="background-color: #1d1f4e; color: white; font-family: sans-serif;">
@@ -328,8 +346,8 @@
   // Tableau des images par service
   const allImages = [
     ["../image/chambre-superieur.jpg", "./image/chambre2..JPG", "./image/chambre4.JPG" ,"./image/chambre5.JPG" ,"./image/chambre6.JPG","./image/chambre7.JPG"],
-    ["../image/restau.JPG", "./image/restau2.jpg", "./image/restau3.jpg"],
-    ["../image/salle-de-fete.jpg", "./image/salle2.jpg", "./image/salle3.jpg"],
+    ["../image/restau.JPG", "./image/restau2.JPG", "./image/restau3.JPG"],
+    ["../image/salle-de-fete.jpg", "./image/reception.jpg", "./image/salle3.jpg"],
     ["../image/paillote.JPG", "./image/paillote2.jpg", "./image/paillote3.jpg", "./image/paillote2.JPG", "./image/paillote4.jpg", "./image/paillote5.jpg"],
     ["../image/bar.jpg", "./image/bar2.jpg", "./image/bar3.jpg" , "./image/bar4.jpg", "./image/bar5.jpg", "./image/bar7.jpg", "./image/bar8.jpg"]
   ];
@@ -369,6 +387,38 @@ document.getElementById('scrollTopBtn').addEventListener('click', function (e) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
+
+<script>
+  const images = document.querySelectorAll('.carousel-inner img');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  let index = 0;
+
+  function showImage(i) {
+    images.forEach(img => img.classList.remove('active'));
+    images[i].classList.add('active');
+  }
+
+  prev.addEventListener('click', () => {
+    index = (index - 1 + images.length) % images.length;
+    showImage(index);
+  });
+
+  next.addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    showImage(index);
+  });
+
+  // 🔁 Défilement automatique toutes les 3 secondes
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    showImage(index);
+  }, 3000); // 3000 ms = 3 secondes
+
+  // Affiche la première image au chargement
+  showImage(index);
+</script>
+
 
 
 </body>

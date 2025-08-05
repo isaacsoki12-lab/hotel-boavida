@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <style>
+       .carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-img {
+  display: none;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-img.active {
+  display: block;
+}
+
+.carousel button.prev,
+.carousel button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.carousel button.prev {
+  left: 10px;
+}
+
+.carousel button.next {
+  right: 10px;
+}
+
+a.retour {
+  padding: 10px 20px;
+  background-color: #1d1f4e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+a.retour:hover {
+  background-color: #3c3f8c;
+}
+
+ 
+    </style>
+</head>
+<body>
+
+    <div style="position: absolute; top: 20px; left: 20px; z-index: 999; ">
+  <a href="index.html" style="
+      padding: 10px 15px;
+      background-color: #f8f8f8;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 20s        px;
+      font-weight: 2em;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    ">
+    ← Accueil
+  </a>
+</div>
+
+
+    
+    <!-- SECTION ACCUEIL AVEC IMAGE EN ARRIÈRE-PLAN -->
+<section class="section-accueil">
+  <div class="overlay">
+    <h1>Discrétion,</h1>
+    <h2>Prestige et service sur mesure</h2>
+    <p>Bienvenue chez nous</p>
+  </div>
+</section>
+
+<div class="separateur"></div>
+<div class="separateur"></div>
+
+ <!-- SECTION PRÉSENTATION DE L'HÔTEL -->
+<section class="section presentation" id="apropos">
+  <div class="container">
+    <div class="texte">
+      <h2>À propos </h2>   
+ <p>Situé a Kinshasa, <strong>KONGO BOA-VIDA</strong> vous accueille dans
+ un cadre moderne, calme et chaleureux. Que vous soyez en séjour d'affaires, en vacances ou en
+ passage, notre établissement vous garantit confort, tranquillité et un service de qualité.</p>
+ <p>Profitez de nos <strong>chambres spacieuses</strong>, de notre <strong>restaurant
+ raffiné</strong>, de notre <strong>piscine rafraîchissante</strong> et de notre agréable
+ <strong>paillote</strong> pour vos moments de détente ou vos rencontres professionnelles.</p>
+ <h3>Pourquoi choisir KONGOBOA-VIDA?</h3>
+ <ul>
+ <li>Chambres confortables et climatisées</li>
+ <li>Cuisine locale et internationale</li>
+ <li>Piscine et espace détente</li>
+ <li>Accès facile et sécurisé</li>
+ <li>Service client attentif</li>
+ </ul>
+ <p><strong>Réservez dès aujourd’hui et vivez l’expérience BOA-VIDA !</strong></p>
+    </div>
+    <div class="image">
+  <div class="carousel">
+    <img src="./image/hotel2.JPG" class="carousel-img active" alt="Image 1">
+    <img src="./image/hotel6.JPG" class="carousel-img" alt="Image 2">
+    <img src="./image/hotel7.JPG" class="carousel-img" alt="Image 3">
+    <img src="./image/chambre standard.jpg" class="carousel-img" alt="Image 3">
+    <img src="./image/couloir .JPG" class="carousel-img" alt="Image 3">
+    <img src="./image/restau3.jpg" class="carousel-img" alt="Image 3">
+    <img src="./image/vu-de-nuit.JPG" class="carousel-img" alt="Image 3">
+    <img src="./image/reception.JPG" class="carousel-img" alt="Image 3">
+    <img src="./image/paillote3.JPG" class="carousel-img" alt="Image 3">
+    <img src="./image/logo.JPG" class="carousel-img" alt="Image 3">
+    <img src="./image/bar4.JPG" class="carousel-img" alt="Image 3">
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</div>
+</section>
+
+<div class="separateur"></div>
+
+<div class="separateur"></div>
+
+<section id="contact" style="padding: 60px 20px; background-color: #f7f8f3; font-family: Arial, sans-serif; text-align: center;">
+  <h2 style="font-size: 28px; color: #9b946f; letter-spacing: 2px;">CONTACTEZ-NOUS</h2>
+  <hr style="width: 60px; margin: 15px auto; border: 1px solid #ccc;">
+
+  <div style="margin-top: 30px;">
+    <div style="margin-bottom: 30px;">
+      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon" style="width: 24px;">
+      <h3 style="color: #9b946f; margin-top: 10px;">APPELEZ-NOUS</h3>
+      <p style="color: #666; font-size: 18px;">+243 899181516<br>+243 987790102</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+      <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email Icon" style="width: 24px;">
+      <h3 style="color: #9b946f; margin-top: 10px;">ENVOYEZ-NOUS UN MAIL</h3>
+      <p style="color: #666; font-size: 18px;">
+        info@kongo-boavida.com<br>
+        reservationboavida@gmail.com
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="separateur"></div>
+
+<!-- FOOTER -->
+<footer id="reservation" style="background-color: #1d1f4e; color: white; font-family: sans-serif;">
+  <div style="max-width: 1200px; margin: auto; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+
+    <!-- À PROPOS -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">À PROPOS</h3>
+      <p style="margin-top: 10px;">
+        KONGOBOA-VIDA est un nouveau hotel dans la ville Kinshasa, il offre des chambres de qualités, une salle de reunion, un restaurant, un bar, une piscine et une salle de fete.
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">CONTACT</h3>
+      <p><i class="fas fa-envelope"></i> congoboavida@gmail.com</p>
+      <p><i class="fas fa-envelope-open"></i> reservationflat-hotelcongoboavida@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +243 899181516</p>
+      <p><i class="fas fa-mobile-alt"></i> +243 987790102</p>
+      <p><i class="fas fa-map-marker-alt"></i> A la carte</p>
+
+      <!-- Réseaux sociaux -->
+      <div style="margin-top: 15px;">
+        <h4 style="margin-bottom: 10px;">SUIVEZ-NOUS</h4>
+        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- PAIEMENTS -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="border-bottom: 1px solid #555; padding-bottom: 10px;">PAIEMENTS</h3>
+      <div style="margin-top: 15px;">
+        <i class="fab fa-cc-visa fa-2x" style="margin-right: 15px;"></i>
+        <i class="fab fa-cc-mastercard fa-2x" style="margin-right: 15px;"></i>
+        <i class="fab fa-cc-amex fa-2x"></i>
+      </div>
+    </div>
+
+
+  <!-- Bas du footer -->
+  <div style="text-align: center; padding: 15px 0; background-color: #1a1c2d;">
+    <p style="margin: 0; font-size: 14px;">© 2025 Kongo Boa-Vida. Tous droits réservé  <span style="color: #cac709;">isaac stone</span></p>
+  </div>
+
+  <script>
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.carousel-img');
+  const total = images.length;
+
+  function showSlide(index) {
+    images.forEach((img, i) => {
+      img.classList.remove('active');
+      if (i === index) img.classList.add('active');
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % total;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + total) % total;
+    showSlide(currentIndex);
+  }
+
+  document.querySelector('.next').addEventListener('click', nextSlide);
+  document.querySelector('.prev').addEventListener('click', prevSlide);
+
+  // Défilement automatique toutes les 5 secondes
+  setInterval(nextSlide, 5000);
+</script>
+
+</footer>
+
+</body>
+</html>

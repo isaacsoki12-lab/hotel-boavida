@@ -65,6 +65,11 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.top-bar h2{
+  position: absolute;
+  right: 45px;
+}
+
 /* === LOGO === */
 
 .logo {
@@ -75,6 +80,14 @@ body {
   object-fit: contain;
   display: block;
 }
+
+.topbar .logo h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  color: white;
+  margin: 0;
+}
+
 
 /* === HEADER === */
 header {
@@ -256,18 +269,24 @@ header {
 
 .presentation .texte {
   flex: 1 1 400px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .presentation .texte h2 {
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 20px;
-  color: #333;
+  color: #12058a;
+}
+.presentation .texte ul{
+  font-size: 1em;
 }
 
+.presentation .texte h3{
+  color: #12058a;
+}
 .presentation .texte p {
-  font-size: 1.1em;
-  line-height: 1.3;
+  font-size: 1em;
+  line-height: 1.1;
   color: #444;
 }
 
@@ -277,7 +296,7 @@ header {
 }
 
 .presentation .image img {
-  width: 145%;
+  width: 140%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -285,7 +304,7 @@ header {
 /* separateur entre les sections */
 .separateur {
   height: 90px; /* environ 10mm */
-  background-color: #e0dede2a; /* gris clair */
+  background-color: #e0dedeab; /* gris clair */
   width: 100%;
 }
 
@@ -332,4 +351,116 @@ header {
 #scrollTopBtn:hover {
   background-color: #e1a500;
   color: white;
+}
+
+
+/* CSS à ajouter dans ton fichier style.css */
+
+.section-accueil {
+  position: relative;
+  height: 100vh;
+  background-image: url('./image/reception.JPG'); /* Mets ici le bon chemin */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  filter: brightness(40%);
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.section-accueil .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* fond semi-transparent */
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.section-accueil h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.section-accueil h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section-accueil p {
+  font-size: 1.5em;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-inner img.active {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+
+.galerie-accueil .image-unique {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-voir-plus {
+  display: inline-block;
+  background-color: #050505;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voir-plus:hover {
+  background-color: #a10c22;
+}
+
+
+/* retour a l'accueil */
+
+a.retour {
+  padding: 10px 20px;
+  background-color: #1d1f4e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+a.retour:hover {
+  background-color: #3c3f8c;
 }
