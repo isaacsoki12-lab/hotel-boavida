@@ -356,12 +356,10 @@ header {
 }
 
 
-/* CSS à ajouter dans ton fichier style.css */
-
 .section-accueil {
   position: relative;
   height: 100vh;
-  background-image: url('./image/reception.JPG'); /* Mets ici le bon chemin */
+  background-image: url('./image/reception.JPG'); 
   background-size: cover;
   background-position: center;
   display: flex;
